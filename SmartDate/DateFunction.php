@@ -630,3 +630,10 @@ function smart_date_function($formula,$year='')
 
     return sortAndOrder($days);
 }
+
+class DateFunction
+{
+    static function run($formula, $year='') {
+        return smart_date_function($formula, $year);
+    }
+}
